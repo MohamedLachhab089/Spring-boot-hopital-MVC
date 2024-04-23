@@ -25,7 +25,7 @@ public class HopitalMvcApplication {
         return new BCryptPasswordEncoder();
     }
 
-    @Bean
+    //@Bean
     CommandLineRunner commandLineRunner(PatientRepo patientRepo) {
         return args -> {
             patientRepo.save(new Patient(null, "Mohamed", new Date(), false, 10));
